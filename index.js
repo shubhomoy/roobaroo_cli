@@ -2,6 +2,7 @@ var fs = require('fs');
 var ytdl = require('ytdl-core');
 var ffmpeg = require('fluent-ffmpeg');
 var http = require('http');
+var prompt = require('prompt');
 
 var url = "https://www.youtube.com/watch?v=FM7MFYoylVs";
 var mp4 = './video.mp4';
@@ -25,6 +26,10 @@ http.get('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=' 
 			console.log((i+1) + ' - ' + tracks[i].name);
 		}
 		console.log('Press the curresponding song to download');
+		prompt.start();
+		prompt.get(['Song number'], function(err, response) {
+			
+		});
 	});
 });
 
