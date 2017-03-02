@@ -58,7 +58,7 @@ var urlDownloadMp3Util = function(url) {
 				minSize = minFormat.filesize;
 			}
 		});
-		outputFile = './output/' + escape(info.title);
+		outputFile = './output/' + escape(info.title) + '.mp3';
 		console.log('File size of ' + (minFormat.filesize/(1024*1024)).toFixed(2) + ' mb will be downloaded');
 		var video = ytdl(url, ['--format=' + minFormat.format_id]);
 		video.on('info', function(info) {
