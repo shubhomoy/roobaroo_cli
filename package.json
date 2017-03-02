@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "sudo apt-get install ffmpeg",
     "start": "node index.js"
   },
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "prompt": "^1.0.0",
     "request": "^2.79.0",
+    "youtube-dl": "^1.11.1",
     "ytdl-core": "^0.9.2"
   }
 }
