@@ -12,7 +12,6 @@
   "dependencies": {
     "prompt": "^1.0.0",
     "request": "^2.79.0",
-    "youtube-dl": "^1.11.1",
-    "ytdl-core": "^0.9.2"
+    "youtube-dl": "^1.11.1"
   }
 }
